@@ -1,0 +1,13 @@
+{
+	"title": "GEN ART",
+	"description": "Follow my progress in generated art!",
+	"url": "http://matthijskamstra.github.io/gen-art/",
+	"author": "[mck]",
+	"keywords": [
+		"blog, cybermonk, [mck], generated, svg, vector, generated art, pattern, matthijs, matthijs kamstra, kamstra"
+	],
+	"num_index_posts": 10 ,
+	"src": "src/",
+	"dst": "out/",
+	"img": "/img/"
+}
