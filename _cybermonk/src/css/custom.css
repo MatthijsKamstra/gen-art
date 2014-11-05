@@ -2,7 +2,7 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Righteous','Helvetica Neue',Helvetica,Ari
 
 
 header {
-	background-image: url('../img/patterntriangle03tint_CC2A41.svg');
+	background-image: url('../img/bg/patterntriangle03tint_CC2A41.svg');
 }
 
 .logo {
@@ -11,4 +11,35 @@ header {
 }
 .bg-pink{
 	background-color: #CC2A41;	
+}
+
+
+.preview {
+	overflow: hidden;
+	height: 1150px;
+	position: relative;
+}
+
+.cutline {
+	display: block;
+	width: 100%;
+	height: 16px;
+	background-image : url('../img/icons/cutline.svg');
+	background-repeat: repeat-x;
+	background-position: bottom center;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.button-pink {
+	color: #fff;
+	background-color: #CC2A41;
+	border-radius: 3px;
+	-webkit-transition-duration: .1s;
+	transition-duration: .1s;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+	-webkit-transition-property: box-shadow,background-color;
+	transition-property: box-shadow,background-color;
 }
