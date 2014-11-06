@@ -4,7 +4,7 @@ var Main = function() {
 	Main._document = window.document;
 	new $(function() {
 		if(new $("body").hasClass("post")) {
-			haxe.Log.trace("post",{ fileName : "Main.hx", lineNumber : 24, className : "Main", methodName : "new"});
+			haxe.Log.trace("post",{ fileName : "Main.hx", lineNumber : 25, className : "Main", methodName : "new"});
 			return;
 		}
 		var count = new $("section");
@@ -18,10 +18,10 @@ var Main = function() {
 		}
 		new $("section img").wrap("<div class='preview'></div>");
 		new $(".preview").prepend("<span class='cutline'/>");
-		var w = new $("section img").width();
-		new $(".preview").height(w * .66);
-		haxe.Log.trace("document ready: section: " + Std.string(count),{ fileName : "Main.hx", lineNumber : 44, className : "Main", methodName : "new"});
-		haxe.Log.trace(array.length,{ fileName : "Main.hx", lineNumber : 45, className : "Main", methodName : "new", customParams : [array[3]]});
+		var w = new $(".preview").width();
+		if(w != 0) new $(".preview").height(w * .66);
+		haxe.Log.trace("document ready: section: " + Std.string(count),{ fileName : "Main.hx", lineNumber : 45, className : "Main", methodName : "new"});
+		haxe.Log.trace(array.length,{ fileName : "Main.hx", lineNumber : 46, className : "Main", methodName : "new", customParams : [array[3]]});
 	});
 };
 Main.__name__ = true;

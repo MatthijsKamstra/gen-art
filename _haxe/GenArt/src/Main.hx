@@ -39,8 +39,8 @@ class Main
 			new JQuery("section img" ).wrap( "<div class='preview'></div>" );
 			new JQuery(".preview" ).prepend( "<span class='cutline'/>" );
 
-			var w = new JQuery('section img').width();
-			new JQuery('.preview').height(w*.66);
+			var w = new JQuery('.preview').width();
+			if(w != 0) new JQuery('.preview').height(w*.66);
 
 			trace('document ready: section: ' + count);
 			trace (array.length , array[3]);
