@@ -7,9 +7,9 @@
 	<link rel="self" href="http://matthijskamstra.github.io/gen-art/atom.xml" />
 	<link href="http://matthijskamstra.github.io/gen-art/atom.xml" />
 	<link rel="alternate" type="text/html" hreflang="en" href="http://matthijskamstra.github.io/gen-art/"/>
-	<updated>2014-11-06T00:00:00Z</updated>
+	<updated>2014-11-29T00:00:00Z</updated>
 	<id>http://matthijskamstra.github.io/gen-art/</id>
-	<generator version="0.4.2">cybermonk</generator>
+	<generator version="0.4.3">cybermonk</generator>
 	<author>
 		<name>[mck]</name>
 		<uri>http://matthijskamstra.github.io/gen-art/</uri>
@@ -18,13 +18,13 @@
  	
 	
 	<entry>
-		<title>pattern 11 send4</title>
-		<link href="http://matthijskamstra.github.io/gen-art/2014/11/14/pattern11_send4_150.png.html" />
-		<id>http://matthijskamstra.github.io/gen-art/2014/11/14/pattern11_send4_150.png.html</id>
-		<updated>2014-11-14T00:00:00Z</updated>
+		<title>patternrainbow02 150.png</title>
+		<link href="http://matthijskamstra.github.io/gen-art/2014/11/31/patternrainbow02_150.png.html" />
+		<id>http://matthijskamstra.github.io/gen-art/2014/11/31/patternrainbow02_150.png.html</id>
+		<updated>2014-11-31T00:00:00Z</updated>
 		<content type="xhtml">
 			<div xmlns="http://www.w3.org/1999/xhtml">
-				<p><p><img src="../img/pattern11_send4_150.png" /></p></p>
+				<p><p><img src="../img/patternrainbow02_150.png" /></p></p>
 			</div>
 		</content>
 		<author>
@@ -33,13 +33,13 @@
 	</entry>
 	
 	<entry>
-		<title>pattern 11 security18</title>
-		<link href="http://matthijskamstra.github.io/gen-art/2014/11/13/pattern11_security18_150.png.html" />
-		<id>http://matthijskamstra.github.io/gen-art/2014/11/13/pattern11_security18_150.png.html</id>
-		<updated>2014-11-13T00:00:00Z</updated>
+		<title>patternrainbow01 150.png</title>
+		<link href="http://matthijskamstra.github.io/gen-art/2014/11/30/patternrainbow01_150.png.html" />
+		<id>http://matthijskamstra.github.io/gen-art/2014/11/30/patternrainbow01_150.png.html</id>
+		<updated>2014-11-30T00:00:00Z</updated>
 		<content type="xhtml">
 			<div xmlns="http://www.w3.org/1999/xhtml">
-				<p><p><img src="../img/pattern11_security18_150.png" /></p></p>
+				<p><p><img src="../img/patternrainbow01_150.png" /></p></p>
 			</div>
 		</content>
 		<author>
@@ -48,13 +48,13 @@
 	</entry>
 	
 	<entry>
-		<title>pattern 11 puzzle</title>
-		<link href="http://matthijskamstra.github.io/gen-art/2014/11/12/pattern11_puzzle_150.png.html" />
-		<id>http://matthijskamstra.github.io/gen-art/2014/11/12/pattern11_puzzle_150.png.html</id>
-		<updated>2014-11-12T00:00:00Z</updated>
+		<title>patternhoundstooth 150.png</title>
+		<link href="http://matthijskamstra.github.io/gen-art/2014/11/29/patternhoundstooth_150.png.html" />
+		<id>http://matthijskamstra.github.io/gen-art/2014/11/29/patternhoundstooth_150.png.html</id>
+		<updated>2014-11-29T00:00:00Z</updated>
 		<content type="xhtml">
 			<div xmlns="http://www.w3.org/1999/xhtml">
-				<p><p><img src="../img/pattern11_puzzle_150.png" /></p></p>
+				<p><p><img src="../img/patternhoundstooth_150.png" /></p></p>
 			</div>
 		</content>
 		<author>
@@ -63,13 +63,13 @@
 	</entry>
 	
 	<entry>
-		<title>pattern 11 poison</title>
-		<link href="http://matthijskamstra.github.io/gen-art/2014/11/11/pattern11_poison_150.png.html" />
-		<id>http://matthijskamstra.github.io/gen-art/2014/11/11/pattern11_poison_150.png.html</id>
-		<updated>2014-11-11T00:00:00Z</updated>
+		<title>patterndots03 150.png</title>
+		<link href="http://matthijskamstra.github.io/gen-art/2014/11/28/patterndots03_150.png.html" />
+		<id>http://matthijskamstra.github.io/gen-art/2014/11/28/patterndots03_150.png.html</id>
+		<updated>2014-11-28T00:00:00Z</updated>
 		<content type="xhtml">
 			<div xmlns="http://www.w3.org/1999/xhtml">
-				<p><p><img src="../img/pattern11_poison_150.png" /></p></p>
+				<p><p><img src="../img/patterndots03_150.png" /></p></p>
 			</div>
 		</content>
 		<author>
@@ -78,13 +78,13 @@
 	</entry>
 	
 	<entry>
-		<title>pattern 11 paint6</title>
-		<link href="http://matthijskamstra.github.io/gen-art/2014/11/10/pattern11_paint6_150.png.html" />
-		<id>http://matthijskamstra.github.io/gen-art/2014/11/10/pattern11_paint6_150.png.html</id>
-		<updated>2014-11-10T00:00:00Z</updated>
+		<title>patterndots02 150.png</title>
+		<link href="http://matthijskamstra.github.io/gen-art/2014/11/27/patterndots02_150.png.html" />
+		<id>http://matthijskamstra.github.io/gen-art/2014/11/27/patterndots02_150.png.html</id>
+		<updated>2014-11-27T00:00:00Z</updated>
 		<content type="xhtml">
 			<div xmlns="http://www.w3.org/1999/xhtml">
-				<p><p><img src="../img/pattern11_paint6_150.png" /></p></p>
+				<p><p><img src="../img/patterndots02_150.png" /></p></p>
 			</div>
 		</content>
 		<author>
@@ -93,13 +93,13 @@
 	</entry>
 	
 	<entry>
-		<title>pattern 11 mask</title>
-		<link href="http://matthijskamstra.github.io/gen-art/2014/11/09/pattern11_mask_150.png.html" />
-		<id>http://matthijskamstra.github.io/gen-art/2014/11/09/pattern11_mask_150.png.html</id>
-		<updated>2014-11-09T00:00:00Z</updated>
+		<title>patterndots01 150.png</title>
+		<link href="http://matthijskamstra.github.io/gen-art/2014/11/26/patterndots01_150.png.html" />
+		<id>http://matthijskamstra.github.io/gen-art/2014/11/26/patterndots01_150.png.html</id>
+		<updated>2014-11-26T00:00:00Z</updated>
 		<content type="xhtml">
 			<div xmlns="http://www.w3.org/1999/xhtml">
-				<p><p><img src="../img/pattern11_mask_150.png" /></p></p>
+				<p><p><img src="../img/patterndots01_150.png" /></p></p>
 			</div>
 		</content>
 		<author>
@@ -108,13 +108,13 @@
 	</entry>
 	
 	<entry>
-		<title>pattern 11 machine2</title>
-		<link href="http://matthijskamstra.github.io/gen-art/2014/11/08/pattern11_machine2_150.png.html" />
-		<id>http://matthijskamstra.github.io/gen-art/2014/11/08/pattern11_machine2_150.png.html</id>
-		<updated>2014-11-08T00:00:00Z</updated>
+		<title>patterncube03 150.png</title>
+		<link href="http://matthijskamstra.github.io/gen-art/2014/11/25/patterncube03_150.png.html" />
+		<id>http://matthijskamstra.github.io/gen-art/2014/11/25/patterncube03_150.png.html</id>
+		<updated>2014-11-25T00:00:00Z</updated>
 		<content type="xhtml">
 			<div xmlns="http://www.w3.org/1999/xhtml">
-				<p><p><img src="../img/pattern11_machine2_150.png" /></p></p>
+				<p><p><img src="../img/patterncube03_150.png" /></p></p>
 			</div>
 		</content>
 		<author>
@@ -123,13 +123,13 @@
 	</entry>
 	
 	<entry>
-		<title>pattern 11 heart95</title>
-		<link href="http://matthijskamstra.github.io/gen-art/2014/11/07/pattern11_heart95_150.png.html" />
-		<id>http://matthijskamstra.github.io/gen-art/2014/11/07/pattern11_heart95_150.png.html</id>
-		<updated>2014-11-07T00:00:00Z</updated>
+		<title>pattern13 matthbooth 150.png</title>
+		<link href="http://matthijskamstra.github.io/gen-art/2014/11/24/pattern13_matthbooth_150.png.html" />
+		<id>http://matthijskamstra.github.io/gen-art/2014/11/24/pattern13_matthbooth_150.png.html</id>
+		<updated>2014-11-24T00:00:00Z</updated>
 		<content type="xhtml">
 			<div xmlns="http://www.w3.org/1999/xhtml">
-				<p><p><img src="../img/pattern11_heart95_150.png" /></p></p>
+				<p><p><img src="../img/pattern13_matthbooth_150.png" /></p></p>
 			</div>
 		</content>
 		<author>
@@ -138,13 +138,13 @@
 	</entry>
 	
 	<entry>
-		<title>pattern 11 heart13</title>
-		<link href="http://matthijskamstra.github.io/gen-art/2014/11/06/pattern11_heart13_150.png.html" />
-		<id>http://matthijskamstra.github.io/gen-art/2014/11/06/pattern11_heart13_150.png.html</id>
-		<updated>2014-11-06T00:00:00Z</updated>
+		<title>pattern12 duration 100 150.png</title>
+		<link href="http://matthijskamstra.github.io/gen-art/2014/11/23/pattern12_duration_100_150.png.html" />
+		<id>http://matthijskamstra.github.io/gen-art/2014/11/23/pattern12_duration_100_150.png.html</id>
+		<updated>2014-11-23T00:00:00Z</updated>
 		<content type="xhtml">
 			<div xmlns="http://www.w3.org/1999/xhtml">
-				<p><p><img src="../img/pattern11_heart13_150.png" /></p></p>
+				<p><p><img src="../img/pattern12_duration_100_150.png" /></p></p>
 			</div>
 		</content>
 		<author>
@@ -153,13 +153,13 @@
 	</entry>
 	
 	<entry>
-		<title>pattern 11 gross</title>
-		<link href="http://matthijskamstra.github.io/gen-art/2014/11/05/pattern11_gross_150.png.html" />
-		<id>http://matthijskamstra.github.io/gen-art/2014/11/05/pattern11_gross_150.png.html</id>
-		<updated>2014-11-05T00:00:00Z</updated>
+		<title>pattern12 duration 50 150.png</title>
+		<link href="http://matthijskamstra.github.io/gen-art/2014/11/22/pattern12_duration_50_150.png.html" />
+		<id>http://matthijskamstra.github.io/gen-art/2014/11/22/pattern12_duration_50_150.png.html</id>
+		<updated>2014-11-22T00:00:00Z</updated>
 		<content type="xhtml">
 			<div xmlns="http://www.w3.org/1999/xhtml">
-				<p><p><img src="../img/pattern11_gross_150.png" /></p></p>
+				<p><p><img src="../img/pattern12_duration_50_150.png" /></p></p>
 			</div>
 		</content>
 		<author>
