@@ -1,4 +1,4 @@
--lib jQueryExtern
+# -lib jQueryExtern
 -lib actuate
 -lib mconsole
 

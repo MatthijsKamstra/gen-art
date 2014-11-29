@@ -1,135 +1,83 @@
 (function () { "use strict";
 var Main = function() {
-	Main._window = window;
-	Main._document = window.document;
-	new $(function() {
-		if(new $("body").hasClass("post")) {
-			haxe.Log.trace("post",{ fileName : "Main.hx", lineNumber : 25, className : "Main", methodName : "new"});
-			return;
-		}
-		var count = new $("section");
-		var array = [];
-		var _g1 = 0;
-		var _g = count.length;
-		while(_g1 < _g) {
-			var i = _g1++;
-			var htmlEl = count[i];
-			array.push(htmlEl);
-		}
-		new $("section img").wrap("<div class='preview'></div>");
-		new $(".preview").prepend("<span class='cutline'/>");
-		var w = new $(".preview").width();
-		if(w != 0) new $(".preview").height(w * .66);
-		haxe.Log.trace("document ready: section: " + Std.string(count),{ fileName : "Main.hx", lineNumber : 45, className : "Main", methodName : "new"});
-		haxe.Log.trace(array.length,{ fileName : "Main.hx", lineNumber : 46, className : "Main", methodName : "new", customParams : [array[3]]});
-	});
+	this.counter = 0;
+	this.array = [];
+	Main.window = window;
+	Main.document = window.document;
+	new js.JQuery(Main.document.body).ready($bind(this,this.onDocumentReadyHandler));
 };
-Main.__name__ = true;
 Main.main = function() {
 	var main = new Main();
 };
-var Std = function() { };
-Std.__name__ = true;
-Std.string = function(s) {
-	return js.Boot.__string_rec(s,"");
-};
-var haxe = {};
-haxe.Log = function() { };
-haxe.Log.__name__ = true;
-haxe.Log.trace = function(v,infos) {
-	js.Boot.__trace(v,infos);
+Main.prototype = {
+	onDocumentReadyHandler: function(e) {
+		if(Main.document.body.classList.length != 0 && Main.document.body.classList.contains("post")) {
+			console.log("DONT DO ANYTHING :: post page");
+			return;
+		}
+		var list = Main.document.getElementsByTagName("section");
+		var _g1 = 0;
+		var _g = list.length;
+		while(_g1 < _g) {
+			var i = _g1++;
+			this.array.push(list[i]);
+		}
+		new js.JQuery("section img").wrap("<div class='preview'></div>");
+		new js.JQuery(".preview").prepend("<span class='cutline' />");
+		var w = new js.JQuery(".preview").width();
+		if(w != 0) new js.JQuery(".preview").height(w * .66 | 0);
+		var str = "<div class=\"mc-col-0 mx2 fixed quickmenu z2\">\n\t\t\t\t\t<a id=\"up\"   href=\"#!\" class=\"button-gray block center\"><img src=\"img/icons/up.svg\" class=\"icon p1\"></a>\n\t\t\t\t\t<a id=\"down\" href=\"#!\" class=\"button-gray block center\"><img src=\"img/icons/down.svg\" class=\"icon p1\"></a>\n\t\t\t\t\t</div>";
+		new js.JQuery("body").prepend(str);
+		new js.JQuery("a#up").click($bind(this,this.onClickHandler));
+		new js.JQuery("a#down").click($bind(this,this.onClickHandler));
+		new js.JQuery(Main.document.body).keydown($bind(this,this.onKeyHandler));
+	}
+	,onKeyHandler: function(event) {
+		var _g = event.keyCode;
+		switch(_g) {
+		case 38:
+			this.scrollToPost("up");
+			event.preventDefault();
+			break;
+		case 40:
+			this.scrollToPost("down");
+			event.preventDefault();
+			break;
+		}
+	}
+	,scrollToPost: function(dir) {
+		new js.JQuery(Main.document.body).stop();
+		var scroll = new js.JQuery(Main.document.body).scrollTop();
+		var offset = new js.JQuery(this.array[this.counter]).context.offsetTop;
+		if(offset == scroll) {
+			if(dir == "up") this.counter--; else this.counter++;
+		} else {
+			var _g1 = 0;
+			var _g = this.array.length;
+			while(_g1 < _g) {
+				var i = _g1++;
+				var offset1 = new js.JQuery(this.array[i]).context.offsetTop;
+				if(scroll >= offset1) this.counter = i;
+			}
+		}
+		if(this.counter < 0) {
+			this.counter = 0;
+			offset = 0;
+		} else if(this.counter > this.array.length - 1) {
+			this.counter = this.array.length - 1;
+			offset = new js.JQuery(Main.document.body).height();
+		} else offset = new js.JQuery(this.array[this.counter]).context.offsetTop;
+		new js.JQuery(Main.document.body).animate({ scrollTop : offset},1000);
+	}
+	,onClickHandler: function(event) {
+		if(event.currentTarget.id == "up") this.scrollToPost("up"); else this.scrollToPost("down");
+	}
 };
 var js = {};
-js.Boot = function() { };
-js.Boot.__name__ = true;
-js.Boot.__unhtml = function(s) {
-	return s.split("&").join("&amp;").split("<").join("&lt;").split(">").join("&gt;");
-};
-js.Boot.__trace = function(v,i) {
-	var msg;
-	if(i != null) msg = i.fileName + ":" + i.lineNumber + ": "; else msg = "";
-	msg += js.Boot.__string_rec(v,"");
-	if(i != null && i.customParams != null) {
-		var _g = 0;
-		var _g1 = i.customParams;
-		while(_g < _g1.length) {
-			var v1 = _g1[_g];
-			++_g;
-			msg += "," + js.Boot.__string_rec(v1,"");
-		}
-	}
-	var d;
-	if(typeof(document) != "undefined" && (d = document.getElementById("haxe:trace")) != null) d.innerHTML += js.Boot.__unhtml(msg) + "<br/>"; else if(typeof console != "undefined" && console.log != null) console.log(msg);
-};
-js.Boot.__string_rec = function(o,s) {
-	if(o == null) return "null";
-	if(s.length >= 5) return "<...>";
-	var t = typeof(o);
-	if(t == "function" && (o.__name__ || o.__ename__)) t = "object";
-	switch(t) {
-	case "object":
-		if(o instanceof Array) {
-			if(o.__enum__) {
-				if(o.length == 2) return o[0];
-				var str = o[0] + "(";
-				s += "\t";
-				var _g1 = 2;
-				var _g = o.length;
-				while(_g1 < _g) {
-					var i = _g1++;
-					if(i != 2) str += "," + js.Boot.__string_rec(o[i],s); else str += js.Boot.__string_rec(o[i],s);
-				}
-				return str + ")";
-			}
-			var l = o.length;
-			var i1;
-			var str1 = "[";
-			s += "\t";
-			var _g2 = 0;
-			while(_g2 < l) {
-				var i2 = _g2++;
-				str1 += (i2 > 0?",":"") + js.Boot.__string_rec(o[i2],s);
-			}
-			str1 += "]";
-			return str1;
-		}
-		var tostr;
-		try {
-			tostr = o.toString;
-		} catch( e ) {
-			return "???";
-		}
-		if(tostr != null && tostr != Object.toString) {
-			var s2 = o.toString();
-			if(s2 != "[object Object]") return s2;
-		}
-		var k = null;
-		var str2 = "{\n";
-		s += "\t";
-		var hasp = o.hasOwnProperty != null;
-		for( var k in o ) {
-		if(hasp && !o.hasOwnProperty(k)) {
-			continue;
-		}
-		if(k == "prototype" || k == "__class__" || k == "__super__" || k == "__interfaces__" || k == "__properties__") {
-			continue;
-		}
-		if(str2.length != 2) str2 += ", \n";
-		str2 += s + k + " : " + js.Boot.__string_rec(o[k],s);
-		}
-		s = s.substring(1);
-		str2 += "\n" + s + "}";
-		return str2;
-	case "function":
-		return "<function>";
-	case "string":
-		return o;
-	default:
-		return String(o);
-	}
-};
-String.__name__ = true;
-Array.__name__ = true;
+var $_, $fid = 0;
+function $bind(o,m) { if( m == null ) return null; if( m.__id__ == null ) m.__id__ = $fid++; var f; if( o.hx__closures__ == null ) o.hx__closures__ = {}; else f = o.hx__closures__[m.__id__]; if( f == null ) { f = function(){ return f.method.apply(f.scope, arguments); }; f.scope = o; f.method = m; o.hx__closures__[m.__id__] = f; } return f; }
+var q = window.jQuery;
+js.JQuery = q;
 Main.main();
 })();
 
