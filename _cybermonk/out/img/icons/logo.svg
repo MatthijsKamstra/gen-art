@@ -3,11 +3,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
-<g id="heart">
-</g>
-<g id="power">
-</g>
-<g id="logo">
+<g id="logo" fill="white" >
 	<path d="M14.168,9.419c0.657-2.35,0.061-4.977-1.783-6.825C10.546,0.763,7.95,0.162,5.613,0.796L9.57,4.752L8.532,8.627
 		l-3.88,1.038L0.696,5.712c-0.632,2.335-0.032,4.932,1.803,6.768c1.923,1.924,4.694,2.488,7.118,1.7l0.022,0.022L25.917,30.48
 		c0.644,0.643,1.488,0.968,2.332,0.968c0.845,0,1.687-0.326,2.333-0.968c1.286-1.284,1.286-3.371,0-4.665L14.168,9.419z
